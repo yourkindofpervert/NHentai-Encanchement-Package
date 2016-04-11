@@ -1,0 +1,45 @@
+{
+  "name": "NHentai Enhancement Project",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "It's like RES but for Hentai",
+  "homepage_url": "https://github.com/yourkindofpervert/NHentai-Encanchement-Package/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js",
+      "js/jquery/jquery.min.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "http://nhentai.net/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://nhentai.net/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    },
+    {
+      "matches": [
+        "http://nhentai.net/*"
+      ],
+      "js": [
+        "src/inject/inject.js", "js/jquery/jquery.min.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    "src/tags.json"
+  ]
+}

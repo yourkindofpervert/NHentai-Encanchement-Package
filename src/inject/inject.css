@@ -1,0 +1,37 @@
+/**
+ * Place your custom CSS styles here.
+ **/
+#nhep-bar {
+    /*display: block;*/
+}
+
+.nhep-tag {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px 6px 3px;
+    background-color: #333 !important;
+}
+
+.nhep-tag-selected {
+    background-color: #ed2553 !important;
+}
+
+#nhep-bar .btn, #nhep-bar .form-control {
+    margin: 2px;
+    padding: 2px 6px 3px;
+}
+
+#nhep-bar-tags,
+#nhep-bar-artists,
+#nhep-bar-categories,
+#nhep-bar-parodies,
+#nhep-bar-groups,
+#nhep-bar-languages {
+    margin: 2px;
+    padding: 2px;
+    text-align: left;
+}
+
+.nhep-tag {
+    text-align: center;
+}
